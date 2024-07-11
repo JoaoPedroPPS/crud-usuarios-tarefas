@@ -40,6 +40,11 @@ $status = $dados["status"];
                             <label> Email </label>
                             <input type="email" class="form-control form-control-user" id="email" name="email" value="<?php if (!empty($_SESSION['email'])) { echo $_SESSION['email'];} ?>" >
                         </div>
+
+                        <div class="col-sm-6">
+                            <label> Senha </label>
+                            <input type="senha" class="form-control form-control-user" id="senha" name="senha" value="<?php if (!empty($_SESSION['senha'])) { echo $_SESSION['senha'];} ?>" >
+                        </div>
                     </div>
 
                     <div class="form-group row">

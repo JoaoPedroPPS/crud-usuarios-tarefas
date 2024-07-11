@@ -53,10 +53,11 @@ function cadastraUsuario($nome, $senha, $email, $perfil, $status, $data) {
     return $resultado;
 }
 
-function alteraUsuario($cod, $nome, $email, $perfil, $status) {
+function alteraUsuario($cod, $nome, $email, $senha, $perfil, $status) {
     $conexao = conecta_bd();
+    $senhaMd5 = md5($senha);
     $query = "update usuario
-              set nome='$nome', email='$email', perfil=$perfil, status=$status
+              set nome='$nome', email='$email', senha='$senhaMd5', perfil=$perfil, status=$status
               where cod=$cod";
 
     $resultado = mysqli_query($conexao, $query);
