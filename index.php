@@ -20,7 +20,7 @@ require_once('header.php');
                             <div class="col-lg-6">
                                 <div class="p-4">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">GERENCIADOR DE ORDEM DE SERVIÇO</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">GERENCIADOR DE LISTA DE TAREFAS</h1>
                                     </div>
                                    <?php
                                     if (isset($_SESSION['texto_erro_login'])):
